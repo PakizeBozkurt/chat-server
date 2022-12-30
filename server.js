@@ -26,7 +26,7 @@ app.post("/messages", (req, res) => {
   const { name, message } = req.body;
 
   const newMessages = {
-    id: messages.length,
+    id: messages.length +1,
     name,
     message,
   };
